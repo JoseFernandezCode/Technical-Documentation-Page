@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>CSS Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS3 Documentation</header>
+      <ul>
+        <li>
+          <a href="#Introduction_to_CSS3" class="nav-link">Introduction to CSS3</a>
+        </li>
+        <li>
+          <a href="#CSS3_Selectors" class="nav-link">CSS3 Selectors</a>
+        </li>
+        <li>
+          <a href="#Box_Model" class="nav-link">Box Model</a>
+        </li>
+        <li>
+          <a href="#Layout_and_Positioning" class="nav-link">Layout and Positioning</a>
+        </li>
+        <li>
+          <a href="#Typography_and_Text_Effects" class="nav-link">Typography and Text Effects</a>
+        </li>
+        <li>
+          <a href="#Transitions_Transformations_and_Animations" class="nav-link">Transitions Transformations and Animations</a>
+        </li>
+        <li>
+          <a href="#Responsive_Design" class="nav-link">Responsive Design</a>
+        </li>
+        <li>
+          <a href="#Browser_Compatibility_and_Vendor_Prefixes" class="nav-link">Browser Compatibility and Vendor Prefixes</a>
+        </li>
+        <li>
+          <a href="#Resources_and_Further_Learning" class="nav-link">Resources and Further Learning</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_CSS3">
+        <header>Introduction to CSS3</header>
+        <article>
+          <p>
+            CSS3 serves a fundamental purpose in web development by providing a
+            means to style and format web pages. Its primary goal is to separate
+            the presentation layer from the structure and content layer of a web
+            document, resulting in cleaner and more maintenable code. Here are
+            some specific purposes of CSS3 in web development:
+          </p>
+          <ul>
+            <li>
+              Styling: CSS3 allows web developers to control the visual
+              appereance of elements on a web page.
+            </li>
+            <li>
+              Layout and Positioning: CSS3 provides flexible and precise control
+              over the layout and positioning elements. With CSS3, developers
+              can creater multi-column layouts, control the placement od
+              elements within a page, and achieve responsive designs that adapt
+              to different screen sizes.
+            </li>
+            <li>
+              Consistency and Branding: CSS3 allows developers to establish
+              consistent styles across an entire website by defining styles in a
+              centralized manner.
+            </li>
+            <li>
+              Adaptability: CSS3 enables web pages to adapt to various devices
+              and screen sizes, supporting responsive design. By using Media
+              Queries and other CSS3 techniques, developers can create layout
+              and styles that adjust automatically to provide optimal viewing
+              experiences on different devices.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="CSS3_Selectors">
+        <header>CSS3 Selectors</header>
+        <article>
+          <p>
+            CSS3 offers a variety of Selectors that allow developers to target
+            specific elements in HTML documents for styling. Selectors determine
+            which elements on a web page are affected by CSS rules. Here are
+            some common CSS3 selectors:
+          </p>
+          <ol>
+            <li>
+              Element Selector:
+              <ul>
+                <li>
+                  Syntax:
+                  <p><code>elementname { styles }</code></p>
+                </li>
+                <li>
+                  Targets: All elements of a especific HTML tag. For example:
+                  <p><code>body {background-color: black;}</code></p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Class Selector:
+              <ul>
+                <li>
+                  Syntax:
+                  <p><code>.classname { styles }</code></p>
+                </li>
+                <li>
+                  Targets: Elements with especific class attribute value. For
+                  example:
+
+                  <p><code>.dot {color: blue;}</code></p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              ID Selector:
+              <ul>
+                <li>
+                  Syntax:
+                  <p><code>#idname { styles }</code></p>
+                </li>
+                <li>
+                  Targets: The elements with a especific ID attribute value. For
+                  example:
+                  <p><code>#yourname {font-size: 30px;}</code></p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Attribute Selector:
+              <ul>
+                <li>
+                  Syntax:
+                  <p><code>[attributte='value'] {color:beige;}</code></p>
+                </li>
+                <li>
+                  Targets: Elements with a especific attribute value. For
+                  example:
+                  <p><code>[type='radio'] {color: blue;}</code></p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Pseudo-Classes:
+              <ul>
+                <li>
+                  Syntax:
+
+                  <p><code>element:pseudo-class { styles }</code></p>
+                </li>
+                <li>
+                  Targets: Elements with a especific state or condition. For
+                  example:
+                  <p>
+                    <code>buttom:hover {background-color: Aquamarine}</code>
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Pseudo-Elements:
+              <ul>
+                <li>
+                  Syntax:
+
+                  <p><code>element::pseudo-element {styles}</code></p>
+                </li>
+                <li>
+                  Targets: Especific parts of an element. For example:
+
+                  <p><code>head::first-line {color: black;}</code></p>
+                  <p>Targets the first elements of all 'head' elements.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Descendant Selector:
+              <ul>
+                <li>
+                  Syntax:
+
+                  <p><code>element1 element2 {styles}</code></p>
+                </li>
+                <li>
+                  Targets: Elements that are descendant of another element. For
+                  example:
+
+                  <p><code>body p {font-family: Verdana;}</code></p>
+                  <p>
+                    Targets all 'p' elements that are descendant from 'body'
+                    element.
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Box_Model">
+        <header>Box Model</header>
+        <p>
+          The Box Model defines how elements are structured and how their
+          dimensions and spacing are calculated. It consist on four components:
+          content, padding, border and margin.
+        </p>
+        <p>Here's an explanation of each component of the Box Model:</p>
+        <ol>
+          <li>
+            Content:
+            <ul>
+              <li>
+                The content area refers to the actual space ocupied by the
+                element's content, such as text, image, or other nested
+                elements.
+              </li>
+              <li>
+                Its size its determined by porperties like:
+                <span>'width'</span> or <span>'height'</span>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Padding:
+            <ul>
+              <li>
+                The padding is the space between the content and the element's
+                border.
+              </li>
+              <li>
+                It can be set using properties like
+                <span>'padding-top'</span>, <span>'padding-right'</span>,
+                <span>'padding-bottom'</span>, <span>'padding-left'</span>.
+              </li>
+              <li>
+                Padding adds space internally, increasing space between the
+                content and the border.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Border:
+            <ul>
+              <li>
+                The border surrounds the content and padding of an element.
+              </li>
+              <li>
+                It can be styled using properties like
+                <span>'border-width'</span>, <span>'border-style'</span>,
+                <span>'border-color'</span>.
+              </li>
+              <li>
+                Border can have different thicknesses, styles(solid, dashed,
+                etc.) and colors.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Margin:
+            <ul>
+              <li>
+                The margin is the space outside the element's border, providing
+                separation from neighboring elements.
+              </li>
+              <li>
+                It can be set using properties like
+                <span>'margin-top'</span>, <span>'margin-right'</span>,
+                <span>'margin-bottom'</span>, <span>'margin-left'</span>.
+              </li>
+              <li>
+                Margin's create space externally, controlling the distance
+                between the element and adjacent elements.
+              </li>
+            </ul>
+            <p>
+              The total space occupied by an element is calculated by summing up
+              the content, padding, border and margin. For example, the total
+              width of an element is calculated as follows:
+            </p>
+            <p>
+              <code
+                >Total width: width + padding-left + padding-right + border-left
+                + border-right + margin-left + margin-right</code
+              >
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="main-section" id="Layout_and_Positioning">
+        <header>Layout and Positioning</header>
+        <article>
+          <p>
+            CSS3 provides several techniques for layout and positioning of
+            elements on a web page. These techniques allows web developers to
+            control the arragement of elements and create various responsive
+            designs. Here's some common CSS3 layout and positioning properties:
+          </p>
+          <ol>
+            <li>
+              Normal Flow:
+              <ul>
+                <li>
+                  By default, elements follow the normal flow of the document,
+                  known as the flow layout. elements are displayed one after
+                  another, vertically or horizontally, depending on their
+                  display property (e.g., <span>'block'</span>,
+                  <span>'inline'</span>, and <span>'inline-block'</span>).
+                </li>
+                <li>
+                  The normal flow can be influenced by properties like
+                  <span>'float'</span>, <span>'clear'</span>, and
+                  <span>'position'</span>.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Positioning:
+              <ul>
+                <li>
+                  CSS3 introduces different positioning schemes for elements:
+                  <span>'static'</span>, <span>'relative'</span>,
+                  <span>'absolute'</span>, and <span>'fixed'</span>.
+                </li>
+                <li>
+                  <span>'static'</span>: This is the default positioning.
+                  Elements are placed in the normal flow of the document.
+                </li>
+                <li>
+                  <span>'relative'</span>: Elements are positioned relative to
+                  their normal position. It allows you to use properties like
+                  <span>'top'</span>, <span>'right'</span>,
+                  <span>'bottom'</span>, and <span>'left'</span> to off set the
+                  element from its normal position without affecting other
+                  elements layout.
+                </li>
+                <li>
+                  <span>'absolute'</span>: Elements are removed from the normal
+                  flow and positioned relative to their nearest positioned
+                  ancestor (ancestor with a positioning other than
+                  <span>'static'</span>) or the document's initial containing
+                  block. It allows precise positioning on the page.
+                </li>
+                <li>
+                  <span>'fixed'</span>: Elements are removed from the normal
+                  flow of the document and positioned relative to the viewport.
+                  They remain fixed in the same position even when the user
+                  scrolls the page.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Float:
+              <ul>
+                <li>
+                  The <span>'float'</span> property allows elements to be
+                  shifted to one side, either left or right, taking them out of
+                  the normal flow.
+                </li>
+                <li>
+                  Floating elements are commonly used for creating column-based
+                  layouts or wrapping text around images.
+                </li>
+                <li>
+                  However, floating elements may cause container elements to
+                  collapse, wich can be addressed by using the
+                  <span>'clear'</span> property.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Flexbox:
+              <ul>
+                <li>
+                  CSS3 Flexbox is a powerful layout model designed to align and
+                  distribute elements within a container.
+                </li>
+                <li>
+                  It allows developers to create flexible and responsive
+                  layouts, adjusting to different screen sizes and orientations.
+                </li>
+                <li>
+                  By setting the parent container's
+                  <span>'display'</span> property to <span>'flex'</span>, child
+                  elements inside the container can be flexibly positioned and
+                  sized using various alignment and distribution properties.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Grid:
+              <ul>
+                <li>
+                  CSS3 Grid layout provides a two-dimensional grid system that
+                  allows for complex layouts and precise control over rows and
+                  columns.
+                </li>
+                <li>
+                  Developers can define both the rows and columns of the grid,
+                  and place elements anywhere within the grid.
+                </li>
+                <li>
+                  Grid enables the creation of responsive designs with more
+                  complex layouts and control over element positioning.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Typography_and_Text_Effects">
+        <header>Typography and Text Effects</header>
+        <article>
+          <p>
+            CSS3 offers a wide range of properties to control typography and
+            apply various text effects, enabling web developers to enhance the
+            visual appereance of text on web pages. Here's some common CSS3
+            properties related to typography and text effects:
+          </p>
+          <ol>
+            <li>
+              Font properties:
+              <ul>
+                <li>
+                  <span>'font-family'</span>: Specifies the font family for the
+                  text. It allows you to define a prioritized list of font
+                  names, and the browser will use the first available font on
+                  the user's system.
+                </li>
+                <li>
+                  <span>'font-size'</span>: Sets the size of the text. It can be
+                  specified in pixels, em, rems, percentages, or other length
+                  units.
+                </li>
+                <li>
+                  <span>'font-weight'</span>: Determines the thickness of the
+                  font. It can be set to values like <span>'normal'</span>,
+                  <span>'bold'</span>, <span>'bolder'</span> or numeric values.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Text color and Decoration:
+              <ul>
+                <li>
+                  <span>'color'</span>: Sets the color of the text, using named
+                  colors, RGB values, or hexadecimal codes.
+                </li>
+                <li>
+                  <span>'text-decoration'</span>: Adds visual effects to the
+                  text, such as underlines, overlines, line-through, or none.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Text Alignment and Indentation:
+              <ul>
+                <li>
+                  <span>'text-align'</span>: Aligns the text within its
+                  container. Values can be <span>'left'</span>,
+                  <span>'right'</span>, <span>'center'</span>, and
+                  <span>'justify'</span>.
+                </li>
+                <li>
+                  <span>'text-indent'</span>: Specifies the indentation of the
+                  first line of text within a block element.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Line height and Spacing:
+              <ul>
+                <li>
+                  <span>'line-height'</span>: Sets the height of each line of
+                  text, creating vertical spacing between lines.
+                </li>
+                <li>
+                  <span>'letter-spacing'</span>: Adjust the space between
+                  characters (tracking).
+                </li>
+                <li>
+                  <span>'word-spacing'</span>: Controls the space between words.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Text Shadow:
+              <ul>
+                <li>
+                  <span>'text-shadow'</span>: Applies a shadow effect to text.
+                  You can define shadow's color, horizontal or vertical offset,
+                  and blur radius.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Text Transformation:
+              <ul>
+                <li>
+                  <span>'text-transform'</span>: Transforms the text to
+                  uppercase, lowercase, capitalize, or none.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Web fonts:
+              <ul>
+                <li>
+                  CSS3 allows web developers to use customs fonts on their web
+                  pages, not limited to the standard fonts available on users
+                  systems.
+                </li>
+                <li>
+                  The <span>'@font-face'</span> rule enables you to load custom
+                  font files (e.g., .woff, .woff2), and aplly them to them to
+                  text using the <span>'font-family'</span> property.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Text Overflow:
+              <ul>
+                <li>
+                  <span>'text-overflow'</span>: Handles text overflow when the
+                  content exceeds the available space in an element. It can be
+                  set to 'ellipsis' to display an ellipsis ('...') to indicate
+                  truncation.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Transitions_Transformations_and_Animations">
+        <header>Transitions Transformations and Animations</header>
+        <article>
+          <p>
+            CSS3 provides powerful features for creating smooth transitions,
+            transformations and animations, allowing web developers to add
+            dynamic and interactive elements to their web pages. Here's a brief
+            explanation of each of these CSS3 features:
+          </p>
+          <ol>
+            <li>
+              Transitions:
+              <ul>
+                <li>
+                  CSS3 transitions allows for smooth changes in property values
+                  over a specified duration, creating animated effects when a
+                  property is modified.
+                </li>
+                <li>
+                  To use transitions, you define the starting and the ending
+                  property values, along with the duration and timing functions.
+                </li>
+                <li>
+                  Commonly, transitioned properties include
+                  <span>'color'</span>, <span>'background-color'</span>,
+                  <span>'opacity'</span>, <span>'width'</span>,
+                  <span>'height'</span>, and more.
+                </li>
+                <li>
+                  Transitions are triggered when an element undergoes a change,
+                  such as on hover, focus, or other user interactions.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Transformations:
+              <ul>
+                <li>
+                  CSS3 transformations enable developers to modify the
+                  appereance and layout of elements, including rotating,
+                  scaling, skewing, and translating (moving) them in 2D and 3D
+                  space.
+                </li>
+                <li>
+                  Transformations are achieved using the
+                  <span>'transform'</span> property, and variuos transformation
+                  functions, such as <span>'rotate()'</span>,
+                  <span>'scale()'</span>, <span>'skew()'</span>, and
+                  <span>'translate()'</span>.
+                </li>
+                <li>
+                  Combined with transitions or animations, transformations can
+                  create engaging effects like rotating icons on hover or
+                  scaling images during user interactions.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Animations:
+              <ul>
+                <li>
+                  CSS3 animations allow developers to create complex and
+                  customized animations by defining keyframes and specifying how
+                  an element should change at each frame.
+                </li>
+                <li>
+                  Keyframes are defined using the
+                  <span>'@keyframes'</span> rule, where you set specific styles
+                  at various points in the animation timeline (e.g. 0%, 50%,
+                  100%).
+                </li>
+                <li>
+                  The animation is then applied using the
+                  <span>'animation'</span> property, wich includes information
+                  like the animation name, duration, timing function, delay, and
+                  iteration count.
+                </li>
+                <li>
+                  Animations can be used to create looping effects, transitions
+                  between different states, and more sophisticated animations
+                  involving multiple properties.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Responsive_Design">
+        <header>Responsive Design</header>
+        <article>
+          <p>
+            Responsive design is a web development approach that aims to create
+            wesites that adapt and respond gracefully to different screen sizes,
+            devices, and orientations. CSS3 plays a crucial role in achieving
+            responsive design, allowing web developers to adjust the layout and
+            styling of elements based on the user's device or viewport size.
+          </p>
+          <ol>
+            <li>
+              Media Queries:
+              <ul>
+                <li>
+                  Media Queries are a core feature of CSS3 that enable
+                  developers to apply different styles based on the
+                  characteristics of the user's device or viewport.
+                </li>
+                <li>
+                  By using media queries, developers can set breakpoints at
+                  specific screen widths and change the layout or style
+                  accordingly. For example, you can set CSS rules that apply
+                  only when the screen width is below a certain value(e.g., for
+                  mobile devices).
+                </li>
+              </ul>
+            </li>
+            <li>
+              Flexible layouts:
+              <ul>
+                <li>
+                  CSS3 introduces flexible layout techniques like
+                  <span>'flexbox'</span> and <span>'grid'</span>, wich allow
+                  elements to adjust automatically adjust their size and
+                  positioning based on the available space.
+                </li>
+                <li>
+                  Flexbox and grid layout are particularly useful in creating
+                  responsive designs where the arragement of elements needs to
+                  change dynamically to fit different screen sizes.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Relative Units:
+              <ul>
+                <li>
+                  CSS3 offers relative units like <span>'em'</span>,
+                  <span>'rem'</span>, and <span>'%'</span>, wich are valuable in
+                  responsive design as they scale proportionally with the base
+                  font size or the parent container.
+                </li>
+                <li>
+                  Relative units allow developers to create fluid layouts and
+                  text that adapt to changes in viewport size.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Image Media Adaptation:
+              <ul>
+                <li>
+                  Responsive design includes optimizing images and media for
+                  various devices. This can be achieved using CSS3 properties
+                  like <span>'max-width'</span>, and
+                  <span>'max-height'</span> to ensure images and media don't
+                  exceed certaing dimensions, preventing them form overflowing
+                  or causing layout issues.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Mobile-First Approach:
+              <ul>
+                <li>
+                  A common practice in responsive design is the 'Mobile-First'
+                  approach, where the default styles are tailored to mobile
+                  devices with smaller screens.
+                </li>
+                <li>
+                  As the screen size increases, CSS and media queries rules can
+                  be used to enhance the layout and presentation for larger
+                  screens, such as tablets and desktops.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Testings and Cross-Browser Compatibility:
+              <ul>
+                <li>
+                  Responsive Designs requires Thorough testing across various
+                  devices, browsers, and operating system to ensure consistent
+                  and user-friendly experience.
+                </li>
+                <li>
+                  CSS3 features used for responsive design should be chosen
+                  carefully, considering the level of support across different
+                  browsers.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section
+        class="main-section"
+        id="Browser_Compatibility_and_Vendor_Prefixes">
+        <header>Browser Compatibility and Vendor Prefixes</header>
+        <article>
+          <p>
+            Browser compatibility and Vendor prefixes are important
+            considerations when using CSS3 features in web development.
+          </p>
+          <ol>
+            <li>
+              Browser Compatibility:
+              <ul>
+                <li>
+                  Browser compatibility refers to how well a website or web
+                  application renders and functions across different web
+                  browsers.
+                </li>
+                <li>
+                  Different web browsers (e.g., Chrome, Firefox, Safari, Edge,
+                  etc.) may have varying support levels for CSS3 features, wich
+                  can lead to inconsistent appereance or functionality across
+                  different web browsers.
+                </li>
+                <li>
+                  To ensure consistent user experience, developers must test
+                  their websites on various browsers and versions, identifying
+                  and addresing any discrepancies.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Vendor Prefixes:
+              <ul>
+                <li>
+                  Vendor prefixes are a mechanism used to implement CSS3
+                  properties and features that are not yet standarized and may
+                  have varying levels of support across different browsers.
+                </li>
+                <li>
+                  Each vendor browser may introduce specific prefix before
+                  property name to indicate that the feature is experimental and
+                  subject to change.
+                </li>
+                <li>
+                  For example, <span>'-webkit-'</span> is the vendor prefix used
+                  by Webkit based browsers
+                  <span>(Safari, some versions of Chrome)</span>, while
+                  <span>('-moz-')</span> is used by Mozilla based browsers
+                  (e.g., Mozilla Firefox).
+                </li>
+                <li>
+                  To use a CSS3 property with a vendor prefix, you write the
+                  property name with the prefix before it, like this:
+                  <span>('-webkit-border-radius')</span>
+                  <span>('-moz-transform')</span>.
+                </li>
+              </ul>
+              <p>
+                When working with browser compatibility and vendor prefixes,
+                developers need to consider the following best practices:
+              </p>
+              <ol>
+                <li>
+                  Progressive enhancement: Start with a basic foundation of
+                  basic styles and functionality that work across all browsers.
+                  Then, progressively enhance the design and features using CSS3
+                  ans other advance techniques for modern browsers that supports
+                  them.
+                </li>
+                <li>
+                  Features Detection: Use feature detections methods (e.g.,
+                  Modernizr library or <span>'@supports'</span> rule in CSS) to
+                  check whether a specific CSS3 feature is supperted before
+                  applying it. This allows you to provide fallback styles or
+                  alternative functionality for browsers that lack support.
+                </li>
+                <li>
+                  Autoprefixer: To avoid manually adding vendor prefixes,
+                  developers can use tools like (Autoprefixer), this tool
+                  automatically adds the necessary vendor prefixes based on the
+                  compatibility requierements you specify, streamlining the
+                  process.
+                </li>
+                <li>
+                  Keep abreast of browser updates: Stay informed about new CSS3
+                  features, updates, and browser support by regularly checking
+                  official documentation, CSS specifications, and compatibility
+                  tables.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="Resources_and_Further_Learning">
+        <header>Resources and Further Learning</header>
+        <article>
+          <p>
+            When it comes to learning CSS3, there are various resources
+            available that can you help deepen your understanding and master the
+            language. Here's some valuable resouces and further learning options
+            for CSS3:
+          </p>
+          <ol>
+            <li>
+              Online Tutorials and Documentation
+              <ul>
+                <li>
+                  Many websites offer comprehensive CSS3 tutorials and
+                  documentation that cover various aspects of CSS3, including
+                  basic concepts, selectors, properties, layouts, animations,
+                  and more,
+                </li>
+                <li>                  
+                  Mozilla Developer Network
+                  (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" alt="Mozilla Developer Network link" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS</a>),
+                  and CSS Tricks (<a href="https://css-tricks.com/" alt="CSS tricks web page" target="_blank">https://css-tricks.com/</a>) are excellent
+                  resources to start with.
+                </li>
+              </ul>
+            </li>
+            <li>
+              CSS Frameworks and Libraries
+              <ul>
+                <li>
+                  CSS frameworks like bootstrap (<a href="https://getbootstrap.com/" alt="Bootstrap framework" target="_blank">https://getbootstrap.com/</a>) and
+                  Foundation (<a href="https://foundation.zurb.com/" alt="Framework Foundation" target="_blank">https://foundation.zurb.com/</a>) provide pre-designed
+                  CSS components and layouts that can streamline the development
+                  process and ensure responsiveness.
+                </li>
+                <li>
+                  Using CSS frameworks can help you to understand best practices
+                  and save time on styling repetitive elements.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Books and Online Courses
+              <ul>
+                <li>
+                  There are numerous books and Online courses dedicated to CSS3,
+                  suitable for both beginerss and advanced developers.
+                </li>
+                <li>
+                  Look for reputable authors and courses on platforms like Udemy
+                  (<a href="https://www.udemy.com/" alt="Udemy link" target="_blank">https://www.udemy.com/</a>), Coursera
+                  (<a href="https://www.coursera.org/" alt="Coursera link" target="_blank">https://www.coursera.org/</a>), and
+                  Codeacademy (<a href="https://www.codeacademy.com/" alt="Codeacademy web page link" target="_blank">https://www.codeacademy.com/</a>).
+                </li>
+              </ul>
+            </li>
+            <li>
+              CSS Generators and Tools
+              <ul>
+                <li>
+                  Explore CSS code generators and tools that can help you create
+                  complex CSS styles with ease. Tools like CSS Gradient
+                  Generators (e.g., <a href="https://cssgradient.io/" alt="CSS GRadient" target="_blank">https://cssgradient.io/</a>) and CSS
+                  Box Shadow Generators (e.g.,
+                  <a href="https://www.cssmatic.com//box-shadow" alt="Box Shadow Generator in CSS matic" target="_blank">https://www.cssmatic.com//box-shadow</a>) can be valuable
+                  for practical applications.
+                </li>
+              </ul>
+            </li>
+            <li>
+              CSS Community and Forums
+              <ul>
+                <li>
+                  Engaging with the CSS community can provide valuable insights
+                  and support. Participate in web development forums, Stack
+                  Overflow (<a href="https://www.stackoverflow.com/" alt="Stackoverflow page" target="_blank">https://www.stackoverflow.com/</a>), or Reddit's
+                  web development communities (e.g., <a href="https://www.reddit.com/r/webdev/" alt="Reddit's community for Devs" target="_blank">r/webdev</a>) to ask questions
+                  and learn from experienced developers.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Experiment and Practice
+              <ul>
+                <li>
+                  The best way to solidify your understanding od CSS3 is trough
+                  hands-on practice and experimentation.
+                </li>
+                <li>
+                  Build small projects, try out different CSS features, and
+                  create responsive layouts to apply the knownledge you've
+                  gained.
+                </li>
+              </ul>
+            </li>
+            <li>
+              CSS specifications and Updates
+              <ul>
+                <li>
+                  Stay updated with the latest CSS specifications and updates
+                  from the World Wide Web Consortium.
+                </li>
+                <li>
+                  This will keep you informed about the latest CSS3 features and
+                  changes.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
